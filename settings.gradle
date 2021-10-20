@@ -6,6 +6,6 @@ dependencyResolutionManagement {
         jcenter() // Warning: this repository is going to shut down soon
     }
 }
-rootProject.name = "Infinity RecyclerView Scrolling"
+rootProject.name = "Endless Recycler View"
 include ':app'
 include ':endlessrecylerview'
