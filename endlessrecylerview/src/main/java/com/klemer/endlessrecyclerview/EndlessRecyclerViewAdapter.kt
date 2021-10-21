@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.annotation.LayoutRes
 import androidx.recyclerview.widget.RecyclerView
 
-class EndlessRecyclerViewAdapter(@LayoutRes private val customView: Int?) :
+internal class EndlessRecyclerViewAdapter(@LayoutRes private val customView: Int?) :
     RecyclerView.Adapter<EndlessRecyclerViewVH>() {
     private var isLoading = false
 
@@ -29,7 +29,7 @@ class EndlessRecyclerViewAdapter(@LayoutRes private val customView: Int?) :
     }
 }
 
-class EndlessRecyclerViewVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
+internal class EndlessRecyclerViewVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
     fun bind(showProgress: Boolean = false) {
         itemView.rootView.visibility = if (showProgress) View.VISIBLE else View.GONE
     }
